@@ -3,13 +3,13 @@ package lucky.recipespringapp.com.recipespringapp.models;
 import javax.persistence.*;
 
 @Entity
-public class Notes
+public class Note
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @OneToOne //No cascade as we dont want to delete the recipe if Notes is deleted
+    @OneToOne //No cascade as we dont want to delete the recipe if Note is deleted
     private Recipe recipe;
 
     @Lob //CLOB field Indicating to hibernate it is a large char object.

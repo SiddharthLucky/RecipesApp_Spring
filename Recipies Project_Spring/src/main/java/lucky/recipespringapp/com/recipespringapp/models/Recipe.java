@@ -17,17 +17,28 @@ public class Recipe
     private String source;
     private String url;
     private String directions;
-    //private Difficulty difficulty;
+
+    @Enumerated(EnumType.STRING)
+    //Mostly use the string as if we use Ordinal the values are specified as 1, 2.....
+    //Make sure u use ordinal only when u know that the number of enums are not going to change
+    private Difficulty difficulty;
 
     @Lob //BLOB field large binary object
     private Byte[] image;
 
     @OneToOne(cascade = CascadeType.ALL)
-    private Notes notes;
+    private Note notes;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "Recipe")
-    private Set<Ingredients> ingredients = new HashSet<>();
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe")
+    //Make sure the names of tables and columns are small in Mappedby and @JoinColumn name
+    //The mapped by name is same as the variable name in recipe.
+    private Set<Ingredient> ingredients = new HashSet<>();
 
+    @ManyToMany
+    @JoinTable(name = "recipe_category", joinColumns = @JoinColumn(name = "recipe_id"), inverseJoinColumns = @JoinColumn(name = "category_id"))
+    //If we only leave it at Many to Many - Hibernate creates 2 tables with mapped columns.
+    //But we need One table with a mapping of recipe_id and category_id.
+    private Set<Category> categories = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -101,11 +112,35 @@ public class Recipe
         this.image = image;
     }
 
-    public Notes getNotes() {
+    public Note getNotes() {
         return notes;
     }
 
-    public void setNotes(Notes notes) {
+    public void setNotes(Note notes) {
         this.notes = notes;
+    }
+
+    public Difficulty getDifficulty() {
+        return difficulty;
+    }
+
+    public void setDifficulty(Difficulty difficulty) {
+        this.difficulty = difficulty;
+    }
+
+    public Set<Ingredient> getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(Set<Ingredient> ingredients) {
+        this.ingredients = ingredients;
+    }
+
+    public Set<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(Set<Category> categories) {
+        this.categories = categories;
     }
 }

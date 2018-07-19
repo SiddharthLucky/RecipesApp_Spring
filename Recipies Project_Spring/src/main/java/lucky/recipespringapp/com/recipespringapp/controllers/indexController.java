@@ -1,13 +1,13 @@
-package lucky.recipespringapp.com.recipespringapp;
+package lucky.recipespringapp.com.recipespringapp.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class controllers
+public class indexController
 {
     @RequestMapping({"","/","/index"})
-    public String getIndexPage()
+    public String getindex()
     {
         return "index";
     }

@@ -1,6 +1,8 @@
 package lucky.recipespringapp.com.recipespringapp.models;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Recipe
@@ -22,6 +24,9 @@ public class Recipe
 
     @OneToOne(cascade = CascadeType.ALL)
     private Notes notes;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "Recipe")
+    private Set<Ingredients> ingredients = new HashSet<>();
 
 
     public Long getId() {

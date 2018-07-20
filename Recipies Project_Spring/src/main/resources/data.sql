@@ -7,3 +7,5 @@ INSERT INTO uom (description) VALUES ('Tablespoon');
 INSERT INTO uom (description) VALUES ('Cup');
 INSERT INTO uom (description) VALUES ('Pinch');
 INSERT INTO uom (description) VALUES ('Ounce');
+
+/*This file is only going to be picked up if it has the name data.sql or schema.sql*/

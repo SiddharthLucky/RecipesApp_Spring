@@ -2,25 +2,45 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Recipes Management</title>
 </head>
 <body>
-<h1>Recipes</h1>
-
-<table>
-    <tr>
-        <th>ID</th>
-        <th>Description</th>
-    </tr>
-    <!--The variable all recipies passed here are a list or a set of objects
-    that are being iterated one at a time. Since this is a list of objects.
-    Each object can have access to individual properties fo their own.
-    For properties look at Recipe under repositories package.-->
-
-    <tr th:each="recipe : ${AllRecipes}">
-        <td th:text="${recipe.id}">123</td>
-        <td th:text="${recipe.description}">Dish Information</td>
-    </tr>
-</table>
+    <h1>Recipes</h1>
+    <table class="table table-bordered table-dark">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+        </tr>
+        <!--The variable all recipies passed here are a list or a set of objects
+        that are being iterated one at a time. Since this is a list of objects.
+        Each object can have access to individual properties fo their own.
+        For properties look at Recipe under repositories package.-->
+        <tr th:each="recipe : ${AllRecipes}">
+            <td colspan="2" th:text="${recipe.id}">123</td>
+            <td th:text="${recipe.description}">Dish Information</td>
+        </tr>
+        </tbody>
+    </table>
 </body>
 </html>

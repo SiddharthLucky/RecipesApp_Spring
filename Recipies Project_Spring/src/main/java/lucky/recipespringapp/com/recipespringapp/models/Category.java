@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Data
+@EqualsAndHashCode(exclude = {"recipes"}) //ignore the name of the variable as it can cause a circular reference in a bi directional mapping.
 @Entity
 public class Category
 {

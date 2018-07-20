@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class Note
 {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @OneToOne //No cascade as we dont want to delete the recipe if Note is deleted

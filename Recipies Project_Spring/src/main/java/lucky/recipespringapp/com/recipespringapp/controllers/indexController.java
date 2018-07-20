@@ -1,10 +1,8 @@
 package lucky.recipespringapp.com.recipespringapp.controllers;
 
-import lucky.recipespringapp.com.recipespringapp.models.Category;
-import lucky.recipespringapp.com.recipespringapp.models.UOM;
-import lucky.recipespringapp.com.recipespringapp.repositories.CategoryRepository;
-import lucky.recipespringapp.com.recipespringapp.repositories.UOMRepository;
+import lucky.recipespringapp.com.recipespringapp.services.RecipeService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Optional;
@@ -12,24 +10,16 @@ import java.util.Optional;
 @Controller
 public class indexController
 {
-    private CategoryRepository categoryRepository;
-    private UOMRepository uomRepository;
+    private RecipeService recipeService;
 
-    public indexController(CategoryRepository categoryRepository, UOMRepository uomRepository)
-    {
-        this.categoryRepository = categoryRepository;
-        this.uomRepository = uomRepository;
+    public indexController(RecipeService recipeService) {
+        this.recipeService = recipeService;
     }
 
     @RequestMapping({"","/","/index"})
-    public String getindex()
+    public String getindex(Model model)
     {
-        Optional<Category> optionalCategory = categoryRepository.findByDescription("American");
-        Optional<UOM> optionalUom = uomRepository.findByDescription("Teaspoon");
-
-        System.out.println("The Category Id is: " + optionalCategory.get().getId());
-        System.out.println("The UOM id is: " + optionalUom.get().getId());
-
+        model.addAttribute("AllRecipes", recipeService.getRecipes());
         return "index";
     }
 }

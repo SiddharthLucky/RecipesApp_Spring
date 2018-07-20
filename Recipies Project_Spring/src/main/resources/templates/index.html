@@ -9,13 +9,18 @@
 
 <table>
     <tr>
-        <th>Full Name</th>
+        <th>ID</th>
+        <th>Description</th>
     </tr>
-    <!--<tr th:each="author : ${authors}">
-        <td th:text="${author.firstName + author.lastName}">Siddharth Lucky</td>
-        &lt;!&ndash;<td th:text="${author}">Siddharth Lucky</td>&ndash;&gt;
-    </tr>-->
-</table>
+    <!--The variable all recipies passed here are a list or a set of objects
+    that are being iterated one at a time. Since this is a list of objects.
+    Each object can have access to individual properties fo their own.
+    For properties look at Recipe under repositories package.-->
 
+    <tr th:each="recipe : ${AllRecipes}">
+        <td th:text="${recipe.id}">123</td>
+        <td th:text="${recipe.description}">Dish Information</td>
+    </tr>
+</table>
 </body>
 </html>

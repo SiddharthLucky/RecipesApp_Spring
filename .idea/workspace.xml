@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58f3322f-2b87-42f1-b199-5c36de17d8bb" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/models/CategoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/services/RecipeServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Recipies Project_Spring/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Recipies Project_Spring/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/RecipespringappApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/RecipespringappApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Recipies Project_Spring/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +31,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/pom.xml">
+      <file leaf-file-name="RecipeServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/services/RecipeServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="102">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecipeServiceImplTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/services/RecipeServiceImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="48" column="71" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecipespringappApplicationTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/RecipespringappApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -41,89 +64,17 @@
       <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/models/Category.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+            <state relative-caret-position="119">
+              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Ingredient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/models/Ingredient.java">
+      <file leaf-file-name="CategoryTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/models/CategoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UOM.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/models/UOM.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Recipe.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/models/Recipe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecipeBootstrap.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/bootstrap/RecipeBootstrap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/resources/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecipeServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/services/RecipeServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Difficulty.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/models/Difficulty.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Note.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/models/Note.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="140">
+              <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -135,6 +86,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -142,7 +94,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Add-Lombok" />
       </map>
     </option>
   </component>
@@ -165,6 +117,9 @@
         <option value="$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/models/Ingredient.java" />
         <option value="$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/bootstrap/RecipeBootstrap.java" />
         <option value="$PROJECT_DIR$/Recipies Project_Spring/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/RecipespringappApplicationTests.java" />
+        <option value="$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/models/CategoryTest.java" />
+        <option value="$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/services/RecipeServiceImplTest.java" />
       </list>
     </option>
   </component>
@@ -238,36 +193,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="recipespringapp" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Recipies Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Recipies Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Recipies Project_Spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="recipespringapp" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Recipies Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Recipies Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Recipies Project_Spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="recipespringapp" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Recipies Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Recipies Project" type="462c0819:PsiDirectoryNode" />
-              <item name="Recipies Project_Spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="recipespringapp" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -275,17 +200,24 @@
               <item name="Recipies Project" type="462c0819:PsiDirectoryNode" />
               <item name="Recipies Project_Spring" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Recipies Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Recipies Project" type="462c0819:PsiDirectoryNode" />
               <item name="Recipies Project_Spring" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Recipies Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Recipies Project" type="462c0819:PsiDirectoryNode" />
+              <item name="Recipies Project_Spring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="recipespringapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -302,6 +234,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect" value="MySQL" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -309,6 +243,15 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="lucky.recipespringapp.com.recipespringapp.services" />
+      <recent name="lucky.recipespringapp.com.recipespringapp.models" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -322,9 +265,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in recipespringapp">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="All in recipespringapp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="recipespringapp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RecipespringappApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="recipespringapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lucky.recipespringapp.com.recipespringapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="lucky.recipespringapp.com.recipespringapp" />
+      <option name="MAIN_CLASS_NAME" value="lucky.recipespringapp.com.recipespringapp.RecipespringappApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -374,10 +357,15 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.RecipespringappApplication" />
+      <item itemvalue="JUnit.RecipespringappApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.All in recipespringapp" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.RecipespringappApplication" />
-        <item itemvalue="Spring Boot.RecipespringappApplication" />
+        <item itemvalue="JUnit.All in recipespringapp" />
+        <item itemvalue="JUnit.RecipespringappApplicationTests.contextLoads" />
         <item itemvalue="Spring Boot.RecipespringappApplication" />
         <item itemvalue="Spring Boot.RecipespringappApplication" />
         <item itemvalue="Spring Boot.RecipespringappApplication" />
@@ -394,7 +382,7 @@
       <workItem from="1532098020393" duration="57000" />
       <workItem from="1532098105205" duration="122000" />
       <workItem from="1532098259805" duration="247000" />
-      <workItem from="1532098623727" duration="15915000" />
+      <workItem from="1532098623727" duration="19131000" />
     </task>
     <task id="LOCAL-00001" summary="Made a Initial table structure">
       <created>1532098901181</created>
@@ -466,11 +454,29 @@
       <option name="project" value="LOCAL" />
       <updated>1532115173599</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added Bootstrap to make the table look nicer.">
+      <created>1532116141932</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1532116141932</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="RecipespringappApplicationTests_contextLoads - 2018.07.20 at 16h 10m 02s.xml">
+      <configuration name="RecipespringappApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_recipespringapp - 2018.07.20 at 16h 20m 52s.xml">
+      <configuration name="All in recipespringapp" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_recipespringapp - 2018.07.20 at 16h 23m 05s.xml">
+      <configuration name="All in recipespringapp" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16341000" />
+    <option name="totallyTimeSpent" value="19557000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -478,18 +484,18 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49934897" weight="0.32676056" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.4986979" weight="0.32676056" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="TCPMON" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5019531" side_tool="true" visible="true" weight="0.34507042" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026042" side_tool="true" visible="true" weight="0.34507042" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49804688" visible="true" weight="0.34507042" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739584" visible="true" weight="0.34507042" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19596355" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19596355" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="2" />
@@ -523,7 +529,8 @@
     <MESSAGE value="Initial commit, refactored the classes according to project Lombok" />
     <MESSAGE value="Managed circular reference as a bi directional mapping has to be handled and the same has to be excluded. Look at the code in Note, Recipe, Ingredient and Category." />
     <MESSAGE value="Managed the intermittent error with lazy loading. You can use @Transaction to instruct that the whole context should execute as the same transaction." />
-    <option name="LAST_COMMIT_MESSAGE" value="Managed the intermittent error with lazy loading. You can use @Transaction to instruct that the whole context should execute as the same transaction." />
+    <MESSAGE value="Added Bootstrap to make the table look nicer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Bootstrap to make the table look nicer." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/RecipespringappApplication.java">
@@ -627,13 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/models/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/models/Ingredient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -655,16 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/services/RecipeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/models/Difficulty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -682,6 +672,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="37" column="68" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/bootstrap/RecipeBootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
@@ -692,10 +689,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/resources/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/RecipespringappApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+        <state relative-caret-position="187">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/models/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/models/CategoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/main/java/lucky/recipespringapp/com/recipespringapp/services/RecipeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recipies Project_Spring/src/test/java/lucky/recipespringapp/com/recipespringapp/services/RecipeServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="48" column="71" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
         </state>
       </provider>
     </entry>

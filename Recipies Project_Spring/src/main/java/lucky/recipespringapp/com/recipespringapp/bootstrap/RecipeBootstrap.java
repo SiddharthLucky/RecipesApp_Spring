@@ -1,5 +1,6 @@
 package lucky.recipespringapp.com.recipespringapp.bootstrap;
 
+import lombok.extern.slf4j.Slf4j;
 import lucky.recipespringapp.com.recipespringapp.models.*;
 import lucky.recipespringapp.com.recipespringapp.repositories.CategoryRepository;
 import lucky.recipespringapp.com.recipespringapp.repositories.RecipeRepository;
@@ -13,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Slf4j
 @Component
 public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEvent> {
 
@@ -30,6 +32,7 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
         recipeRepository.saveAll(getRecipes());
+        log.debug("Saved all recipes");
     }
 
     private List<Recipe> getRecipes()

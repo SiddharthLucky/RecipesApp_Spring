@@ -35,41 +35,53 @@
     <title>Recipes Management</title>
 </head>
 <body>
-    <h1>Recipes</h1>
-    <table class="table table-bordered table-dark">
-        <thead>
-        <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-        </tr>
-        <!--The variable all recipies passed here are a list or a set of objects
-        that are being iterated one at a time. Since this is a list of objects.
-        Each object can have access to individual properties fo their own.
-        For properties look at Recipe under repositories package.-->
-        <tr th:each="recipe : ${AllRecipes}">
-            <td colspan="2" th:text="${recipe.id}">123</td>
-            <td th:text="${recipe.description}">Dish Information</td>
-        </tr>
-        </tbody>
-    </table>
+    <div class="container-fluid" style="margin-top: 20px">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-primary">
+
+                    <div class="panel-heading">
+                        <h1 class="panel-title">My Recipes!</h1>
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive" th:if="${not #lists.isEmpty(AllRecipes)}">
+                            <table class="table table-hover ">
+                                <thead class="thead-inverse">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Description</th>
+                                    <th>View</th>
+                                </tr>
+                                </thead>
+                                <tr th:remove="all">
+                                    <td>123</td>
+                                    <td>Tasty Goodnees 1</td>
+                                    <td><a href="#">View</a></td>
+                                </tr>
+                                <tr th:remove="all">
+                                    <td>12333</td>
+                                    <td>Tasty Goodnees 2</td>
+                                    <td><a href="#">View</a></td>
+                                </tr>
+                                <!--The variable all recipies passed here are a list or a set of objects
+                                that are being iterated one at a time. Since this is a list of objects.
+                                Each object can have access to individual properties fo their own.
+                                For properties look at Recipe under repositories package.-->
+                                <!--/*@thymesVar id="AllRecipes" type="lucky.recipespringapp.com.recipespringapp.models.Recipe"*/-->
+                                <tr th:each="recipe : ${AllRecipes}">
+                                    <!--/*@thymesVar id="recipe" type="guru.springframework.domain.Recipe"*/-->
+                                    <td th:text="${recipe.id}">334</td>
+                                    <td th:text="${recipe.description}">Tasty Goodnees 3</td>
+                                    <!--This can be used to grab the corresponding id of the view. The variable can be the same as the object
+                                    that we use to display in the table.-->
+                                    <td><a href="#" th:href="@{'/recipe/show/' + ${recipe.id}}">View</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

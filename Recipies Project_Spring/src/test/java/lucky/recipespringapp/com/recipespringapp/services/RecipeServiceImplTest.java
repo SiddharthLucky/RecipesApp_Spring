@@ -1,5 +1,9 @@
 package lucky.recipespringapp.com.recipespringapp.services;
 
+
+
+import lucky.recipespringapp.com.recipespringapp.converters.RecipeCommandtoRecipe;
+import lucky.recipespringapp.com.recipespringapp.converters.RecipetoRecipeCommand;
 import lucky.recipespringapp.com.recipespringapp.models.Recipe;
 import lucky.recipespringapp.com.recipespringapp.repositories.RecipeRepository;
 import org.junit.Before;
@@ -8,41 +12,65 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.*;
 
+/**
+ * Created by jt on 6/17/17.
+ */
 public class RecipeServiceImplTest {
 
-    RecipeService recipeService;
+    RecipeServiceImpl recipeService;
 
     @Mock
     RecipeRepository recipeRepository;
 
+    @Mock
+    RecipetoRecipeCommand recipeToRecipeCommand;
+
+    @Mock
+    RecipeCommandtoRecipe recipeCommandToRecipe;
+
     @Before
-    public void setUp() throws Exception
-    {
-        //Sets up the mocks, gives you a mock recipe repo
+    public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
 
-        recipeService = new RecipeServiceImpl(recipeRepository);
+        recipeService = new RecipeServiceImpl(recipeRepository, recipeCommandToRecipe, recipeToRecipeCommand);
     }
 
     @Test
-    public void getRecipes()
-    {
+    public void getRecipeByIdTest() throws Exception {
         Recipe recipe = new Recipe();
-        HashSet<Recipe> recipesData = new HashSet<>();
-        recipesData.add(recipe);
+        recipe.setId(1L);
+        Optional<Recipe> recipeOptional = Optional.of(recipe);
 
-        when(recipeService.getRecipes()).thenReturn(recipesData);
-        //We know we will get a set of recipes
+        when(recipeRepository.findById(anyLong())).thenReturn(recipeOptional);
+
+        Recipe recipeReturned = recipeService.getRecipeById(1L);
+
+        assertNotNull("Null recipe returned", recipeReturned);
+        verify(recipeRepository, times(1)).findById(anyLong());
+        verify(recipeRepository, never()).findAll();
+    }
+
+    @Test
+    public void getRecipesTest() throws Exception {
+
+        Recipe recipe = new Recipe();
+        HashSet receipesData = new HashSet();
+        receipesData.add(recipe);
+
+        when(recipeService.getRecipes()).thenReturn(receipesData);
+
         Set<Recipe> recipes = recipeService.getRecipes();
 
         assertEquals(recipes.size(), 1);
-
-        //Making sure that the recipe repo is called only and only once
         verify(recipeRepository, times(1)).findAll();
+        verify(recipeRepository, never()).findById(anyLong());
     }
+
 }

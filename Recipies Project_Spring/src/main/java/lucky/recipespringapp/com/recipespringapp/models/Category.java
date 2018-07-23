@@ -21,5 +21,4 @@ public class Category
     //When there is a Many to Many Mapping make sure one of the mappings has a @JoinTable and @JoinColumn and the other side has
     //the mapped by with the name of the variable in the other class, Ex: Look at Recipe and Category mapping.
     private Set<Recipe> recipes = new HashSet<>();
-
 }

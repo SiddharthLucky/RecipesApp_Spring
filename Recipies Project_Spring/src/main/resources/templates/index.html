@@ -62,6 +62,7 @@
                                     <td>12333</td>
                                     <td>Tasty Goodnees 2</td>
                                     <td><a href="#">View</a></td>
+                                    <td><a href="#">Update</a></td>
                                 </tr>
                                 <!--The variable all recipies passed here are a list or a set of objects
                                 that are being iterated one at a time. Since this is a list of objects.
@@ -74,7 +75,8 @@
                                     <td th:text="${recipe.description}">Tasty Goodnees 3</td>
                                     <!--This can be used to grab the corresponding id of the view. The variable can be the same as the object
                                     that we use to display in the table.-->
-                                    <td><a href="#" th:href="@{'/recipe/show/' + ${recipe.id}}">View</a></td>
+                                    <td><a href="#" th:href="@{'/recipe/'+ ${recipe.id} +'/show/' }">View</a></td>
+                                    <td><a href="#" th:href="@{'/recipe/'+ ${recipe.id} +'/update/' }">Update</a></td>
                                 </tr>
                             </table>
                         </div>

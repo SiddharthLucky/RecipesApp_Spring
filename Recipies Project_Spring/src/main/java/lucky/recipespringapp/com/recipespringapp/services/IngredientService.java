@@ -5,4 +5,5 @@ import lucky.recipespringapp.com.recipespringapp.commands.IngredientCommand;
 public interface IngredientService
 {
     IngredientCommand findRecipeIdAndIngredientId(Long recipeid, Long ingredientsId);
+    IngredientCommand saveIngredient(IngredientCommand command);
 }

@@ -64,6 +64,13 @@ public class RecipeServiceImpl implements RecipeService
     @Transactional
     public RecipeCommand getRecipeCommandById(Long l)
     {
+        /*Steps the code follows.
+        * 1. The view data is communicated using Command Data, hence the command classes
+        * 2. But all the operations are performed using regular model classes.
+        * 3. In the code below, you can see that when getRecipeById(l) is called, it returns a Recipe model
+        * 4. Which is a model class with Repositories(CRUD operations) Follow function getRecipesById.
+        * 5. Once the object is returned it has to be converted the command type to be fed to the view.
+        * 6. Hence getRecipesById is passed as a parameter to recipetoRecipeCommand to get the command object to be returned to the view.*/
         return recipetoRecipeCommand.convert(getRecipeById(l));
     }
 
